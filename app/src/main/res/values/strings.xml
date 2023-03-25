@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assesment 1 Mobpro</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="total_belanja">Total Belanja</string>
+</resources>
