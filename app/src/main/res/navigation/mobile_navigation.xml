@@ -9,17 +9,38 @@
         android:id="@+id/navigation_home"
         android:name="org.d3if4505.assesment1mobpro.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_final"
+            app:destination="@id/navigation_final" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="org.d3if4505.assesment1mobpro.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_final"
+        android:name="org.d3if4505.assesment1mobpro.ui.finall.FragmentFinal"
+        android:label="@string/title_final"
+        tools:layout="@layout/fragment_final" >
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <argument
+            android:name="total"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="tanggal"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="nama"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="org.d3if4505.assesment1mobpro.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_history"
+        android:name="org.d3if4505.assesment1mobpro.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
 </navigation>

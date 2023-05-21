@@ -1,10 +1,10 @@
-package org.d3if4505.assesment1mobpro.ui.dashboard
+package org.d3if4505.assesment1mobpro.ui.finall
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+class FinalViewModel : ViewModel() {
 
-class DashboardViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"
